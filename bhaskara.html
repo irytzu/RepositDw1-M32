@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>faze forula baskara</h2>
+    <label for="bascarA">valor A: </label>
+    <br>
+    <input type="number" id="bascarA">
+    <br><br>
+    <label for="bascarB">valor B: </label>
+    <br>
+    <input type="number" id="bascarB">
+    <br><br>
+    <label for="bascarC">valor C: </label>
+    <br>
+    <input type="number" id="bascarC">
+    <br><br>
+    <input type="button" value="calcular" onclick="fazerConta()">
+    <br>
+    <label for="resposta">resultado: </label>
+    <span id="resposta"></span>
+    <label for="resposta2">resultado 2: </label>
+    <span id="resposta2"></span>
+
+    <script>
+        function fazerConta(){
+            let a = parseFloat(document.getElementById("bascarA").value)
+            let b = parseFloat(document.getElementById("bascarB").value)
+            let c = parseFloat(document.getElementById("bascarC").value)
+            let resp = (-b+ Math.sqrt(b**2-4*a*c))/(2*a)
+            let resp2 = (-b- Math.sqrt(b**2-4*a*c))/(2*a)
+            document.getElementById("resposta").innerHTML = resp.toFixed(2);
+            document.getElementById("resposta2").innerHTML = resp2.toFixed(2);
+        }
+    </script>
+</body>
+</html>
