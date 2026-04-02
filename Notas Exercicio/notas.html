@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notas</title>
+  <link rel="stylesheet" href="notas.css">
+</head>
+<body>
+  <main class="page-wrapper">
+    <section class="card">
+      <header class="card__header">
+        <h1>Média de Aproveitamento</h1>
+        <p>Calcule o conceito e veja se o aluno está aprovado ou reprovado.</p>
+      </header>
+
+      <div class="form-group">
+        <label for="ra">RA</label>
+        <input type="number" id="ra" placeholder="Informe o RA">
+      </div>
+
+      <div class="form-group">
+        <label for="nomeAluno">Nome do Aluno</label>
+        <input type="text" id="nomeAluno" placeholder="Informe o nome do aluno">
+      </div>
+
+      <div class="form-group">
+        <label for="mediaNotaExercicio">Média dos Exercícios</label>
+        <input type="number" id="mediaNotaExercicio" placeholder="0,0">
+      </div>
+
+      <div class="form-group-row">
+        <div class="form-group small">
+          <label for="nota1">Nota 1</label>
+          <input type="number" id="nota1" placeholder="0,0">
+        </div>
+        <div class="form-group small">
+          <label for="nota2">Nota 2</label>
+          <input type="number" id="nota2" placeholder="0,0">
+        </div>
+      </div>
+
+      <div class="form-group-row">
+        <div class="form-group small">
+          <label for="nota3">Nota 3</label>
+          <input type="number" id="nota3" placeholder="0,0">
+        </div>
+        <div class="form-group small">
+          <label for="nota4">Nota 4</label>
+          <input type="number" id="nota4" placeholder="0,0">
+        </div>
+      </div>
+
+      <button class="button" onclick="fazerCalculo()">Calcular</button>
+
+      <div class="result-card" id="resposta">...</div>
+    </section>
+  </main>
+
+  <script src="notas.js"></script>
+</body>
+</html>

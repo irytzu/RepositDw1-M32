@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top, #8fd3f4 0%, #84a9ff 45%, #5b6be0 100%);
+  color: #1f2937;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.page-wrapper {
+  width: 100%;
+  max-width: 540px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 24px;
+  box-shadow: 0 28px 80px rgba(15, 23, 42, 0.18);
+  padding: 32px;
+  backdrop-filter: blur(12px);
+}
+
+.card__header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.card__header p {
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.form-group,
+.form-group-row {
+  margin-top: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.form-group input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  padding: 14px 16px;
+  font-size: 1rem;
+  color: #111827;
+  background: #f8fafc;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+}
+
+.form-group-row {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.form-group.small {
+  margin-top: 0;
+}
+
+.button {
+  width: 100%;
+  margin-top: 24px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 30px rgba(99, 102, 241, 0.24);
+}
+
+.result-card {
+  margin-top: 24px;
+  padding: 20px;
+  border-radius: 18px;
+  background: #eef2ff;
+  border: 1px solid #dbeafe;
+  color: #1e293b;
+  min-height: 76px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+@media (max-width: 520px) {
+  .card {
+    padding: 24px;
+  }
+
+  .card__header h1 {
+    font-size: 1.75rem;
+  }
+}
