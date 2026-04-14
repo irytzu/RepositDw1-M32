@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogão</title>
+    <link rel="stylesheet" href="dogao.css">
+</head>
+<body>
+    <div class="page-center">
+        <div class="card">
+            <h1>Pedido de Dogão</h1>
+
+            <form id="pedidoForm">
+                <label for="basico">Básico (R$ 22)</label>
+                <input type="number" id="basico" name="basico">
+
+                <label for="duplo">Duplo (R$ 26)</label>
+                <input type="number" id="duplo" name="duplo">
+
+                <label for="xsalada">X Salada (R$ 29)</label>
+                <input type="number" id="xsalada" name="xsalada">
+
+                <label for="ref350">Refrigerante 350ml (R$ 5)</label>
+                <input type="number" id="ref350" name="ref350">
+
+                <label for="ref1l">Refrigerante 1L (R$ 8)</label>
+                <input type="number" id="ref1l" name="ref1l">
+
+                <button type="submit">Calcular</button>
+            </form>
+
+            <p id="resultado"></p>
+        </div>
+    </div>
+
+    <script src="dogao.js"></script>
+</body>
+</html>
